@@ -137,7 +137,7 @@ kexec(char *path, char **argv)
   p->trapframe->sp = sp;         // initial stack pointer
   proc_freepagetable(oldpagetable, oldsz);
   
-  Dòng thêm tạm thời để test Task 2 của Hải=================================
+  //Dòng thêm tạm thời để test Task 2 của Hải=================================
   p->vma_table[0].is_used = 1;
   p->vma_table[0].vm_start = 0x40000000; // Địa chỉ ảo giả định
   p->vma_table[0].vm_end = 0x40000000 + 4096;
